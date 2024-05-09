@@ -1,6 +1,6 @@
 # Codice_Fscale_GUI
 ## lan
-[ita](ita) [eng](eng)
+[ita](#ita) [eng](#eng)
 ## ita
 ### sviluppato da:
 [Pispisa Noah](https://www.github.com/noahpispisa)
