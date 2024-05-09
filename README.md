@@ -14,7 +14,7 @@ apre una finestra per la richiesta dei dati, una volta immessi la chude e apre u
 **1 file:**
   - `main.py` che una volta eseguito(da doppio click o da cmd(command prompt)) avvia l'applicazione
 
-##eng
+## eng
 asdwasd
 asdwasd
 wasdwa
