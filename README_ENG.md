@@ -2,7 +2,7 @@
 ## cahnge lenguage
 [ITA](docs/Ita.md)
 
-## programm
+## content
 did you lose you tax id code? this program will calulate it for you!
 
 ### developers:
