@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module dati_GUI</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">dati_GUI</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cnoahp%5Cdesktop%5Cprivato%5Cprogetti%5Ccodice_fiscale_gui%5Cmoduli%5Cdati_gui.py">c:\users\noahp\desktop\privato\progetti\codice_fiscale_gui\moduli\dati_gui.py</a></td></tr></table>
+    <p></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="pydoc.html">pydoc</a><br>
+</td><td class="multicolumn"><a href="tkinter.html">tkinter</a><br>
+</td><td class="multicolumn"></td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+    
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-data"><strong>data</strong></a>()</dt><dd><span class="code">genera&nbsp;la&nbsp;finestra&nbsp;principale<br>
+&nbsp;<br>
+parametri:<br>
+non&nbsp;chiede&nbsp;parametri<br>
+&nbsp;<br>
+return<br>
+datas:&nbsp;la&nbsp;lista&nbsp;con&nbsp;i&nbsp;dati&nbsp;messi&nbsp;correttamente&nbsp;per&nbsp;i&nbsp;calcolo&nbsp;del&nbsp;codice&nbsp;fiscale</span></dd></dl>
+ <dl><dt><a name="-elaborate"><strong>elaborate</strong></a>(window, lista, datas)</dt><dd><span class="code">la&nbsp;funzione&nbsp;controllo&nbsp;che&nbsp;i&nbsp;parametri&nbsp;siano&nbsp;immessi&nbsp;correttamente,<br>
+se&nbsp;è&nbsp;così&nbsp;procede&nbsp;e&nbsp;aggiunge&nbsp;i&nbsp;dati&nbsp;ad&nbsp;una&nbsp;lista<br>
+se&nbsp;non&nbsp;è&nbsp;così&nbsp;non&nbsp;ga&nbsp;nulla<br>
+&nbsp;<br>
+parametri:<br>
+window:&nbsp;un&nbsp;oggetto&nbsp;di&nbsp;tipo&nbsp;tk,&nbsp;la&nbsp;finestra&nbsp;che&nbsp;si&nbsp;vede&nbsp;a&nbsp;schermo<br>
+lista:&nbsp;la&nbsp;lista&nbsp;con&nbsp;i&nbsp;valori&nbsp;inseriti&nbsp;dall'utente&nbsp;<br>
+datas:&nbsp;la&nbsp;lista&nbsp;vuota&nbsp;che&nbsp;conterrà&nbsp;i&nbsp;dati&nbsp;nella&nbsp;forma&nbsp;necessaria&nbsp;per&nbsp;il&nbsp;caloclo&nbsp;del&nbsp;codice<br>
+&nbsp;<br>
+return<br>
+non&nbsp;da&nbsp;return</span></dd></dl>
+ <dl><dt><a name="-mybutton"><strong>mybutton</strong></a>(window, list, list1)</dt><dd><span class="code">crea&nbsp;un&nbsp;bottone&nbsp;che&nbsp;quando&nbsp;viene&nbsp;premuto&nbsp;chiama&nbsp;la&nbsp;funzione&nbsp;"elaborate"</span></dd></dl>
+ <dl><dt><a name="-myentry"><strong>myentry</strong></a>(frame)</dt><dd><span class="code">crea&nbsp;un&nbsp;ogetto&nbsp;di&nbsp;tipo&nbsp;"entry"(casella&nbsp;di&nbsp;testo)<br>
+&nbsp;<br>
+parametri:<br>
+frame:&nbsp;un&nbsp;oggetto&nbsp;di&nbsp;tipo&nbsp;"Frame",dove&nbsp;verrà&nbsp;messa<br>
+&nbsp;<br>
+return<br>
+entry:&nbsp;l'oggetto&nbsp;di&nbsp;tipo&nbsp;"Entry"&nbsp;appena&nbsp;creato</span></dd></dl>
+ <dl><dt><a name="-mygrid"><strong>mygrid</strong></a>(window)</dt><dd><span class="code">genera&nbsp;una&nbsp;griglia&nbsp;che&nbsp;contiene&nbsp;i&nbsp;riquadri&nbsp;(e&nbsp;testi)&nbsp;in&nbsp;cui&nbsp;vanno&nbsp;inseriti&nbsp;i&nbsp;dati<br>
+&nbsp;<br>
+parametri:<br>
+window:&nbsp;l'oggetto&nbsp;di&nbsp;tipo&nbsp;"Tk"&nbsp;che&nbsp;conterrà&nbsp;la&nbsp;griglia<br>
+&nbsp;<br>
+return<br>
+frame:&nbsp;ll'oggetto&nbsp;di&nbsp;tipo&nbsp;"Frame"&nbsp;appena&nbsp;creato<br>
+data:&nbsp;la&nbsp;lista&nbsp;con&nbsp;i&nbsp;dati&nbsp;presi</span></dd></dl>
+ <dl><dt><a name="-mylabel"><strong>mylabel</strong></a>(frame, text)</dt><dd><span class="code">crea&nbsp;un&nbsp;oggetto&nbsp;di&nbsp;tipo&nbsp;label&nbsp;(messaggio&nbsp;scritto&nbsp;sullo&nbsp;schermo)<br>
+&nbsp;<br>
+parametri:<br>
+frame:&nbsp;un&nbsp;oggetto&nbsp;di&nbsp;tipo&nbsp;"Frame"&nbsp;in&nbsp;cui&nbsp;andrà&nbsp;a&nbsp;finire&nbsp;il&nbsp;testo<br>
+text:&nbsp;il&nbsp;testo<br>
+&nbsp;<br>
+return<br>
+label:&nbsp;l'oggetto&nbsp;di&nbsp;tipo&nbsp;"Label"&nbsp;appena&nbsp;creato</span></dd></dl>
+ <dl><dt><a name="-sex"><strong>sex</strong></a>(frame)</dt><dd><span class="code">un&nbsp;menù&nbsp;a&nbsp;tendina&nbsp;da&nbsp;cui&nbsp;scegliere&nbsp;il&nbsp;sesso<br>
+&nbsp;<br>
+parametri:<br>
+frame:&nbsp;l'oggetto&nbsp;di&nbsp;tipo&nbsp;"Frame"&nbsp;in&nbsp;cui&nbsp;andrà&nbsp;il&nbsp;menù<br>
+&nbsp;<br>
+return<br>
+Sex:&nbsp;l'oggetto&nbsp;di&nbsp;tipo&nbsp;"OptionMenu"&nbsp;appena&nbsp;creato<br>
+clicekd:&nbsp;la&nbsp;selezione&nbsp;dell'utente</span></dd></dl>
+</td></tr></table>
+</body></html>

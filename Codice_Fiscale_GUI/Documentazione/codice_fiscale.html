@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module codice_fiscale</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title">codice_fiscale</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:c%3A%5Cusers%5Cnoahp%5Cdesktop%5Cprivato%5Cprogetti%5Ccodice_fiscale_gui%5Cmoduli%5Ccodice_fiscale.py">c:\users\noahp\desktop\privato\progetti\codice_fiscale_gui\moduli\codice_fiscale.py</a></td></tr></table>
+    <p></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="codice_comune.html">codice_comune</a><br>
+</td><td class="multicolumn"><a href="pydoc.html">pydoc</a><br>
+</td><td class="multicolumn"></td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="codice_fiscale.html#anno">anno</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="anno">class <strong>anno</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#anno">anno</a>(<a href="#anno">anno</a>,&nbsp;mese,&nbsp;giorno)<br>
+&nbsp;<br>
+una&nbsp;classe&nbsp;di&nbsp;tipo&nbsp;<a href="#anno">anno</a>&nbsp;che&nbsp;contiene&nbsp;3&nbsp;variabili&nbsp;corrispondenti&nbsp;a&nbsp;quelle&nbsp;di&nbsp;una&nbsp;data<br>
+&nbsp;<br>
+parametri:<br>
+<a href="#anno">anno</a>:&nbsp;l'elemento&nbsp;indicante&nbsp;l'<a href="#anno">anno</a><br>
+mese:&nbsp;l'elemento&nbsp;indicante&nbsp;il&nbsp;mese<br>
+giorno:&nbsp;l'elemento&nbsp;indicante&nbsp;il&nbsp;giorno<br>
+self:&nbsp;prende&nbsp;l'oggetto&nbsp;che&nbsp;sta&nbsp;usando&nbsp;la&nbsp;classe/metodo<br>
+&nbsp;<br>
+retunr<br>
+non&nbsp;da&nbsp;return<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="anno-__init__"><strong>__init__</strong></a>(self, anno, mese, giorno)</dt><dd><span class="code">Initialize&nbsp;self.&nbsp;&nbsp;See&nbsp;help(type(self))&nbsp;for&nbsp;accurate&nbsp;signature.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</span></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor functions-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Functions</strong></td></tr>
+    
+<tr><td class="decor functions-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl><dt><a name="-anno_nascita"><strong>anno_nascita</strong></a>(data, sesso)</dt><dd><span class="code">genera&nbsp;le&nbsp;cifre&nbsp;del&nbsp;codice&nbsp;fiscale&nbsp;dalla&nbsp;7&nbsp;alla&nbsp;12<br>
+&nbsp;<br>
+parametri:<br>
+data:&nbsp;un&nbsp;oggetto&nbsp;di&nbsp;tipo&nbsp;"<a href="#anno">anno</a>"&nbsp;(implementato&nbsp;in&nbsp;questo&nbsp;modulo&nbsp;da&nbsp;me)&nbsp;che&nbsp;contiene&nbsp;la&nbsp;data&nbsp;di&nbsp;nascita&nbsp;della&nbsp;persona<br>
+sesso:&nbsp;il&nbsp;sesso&nbsp;della&nbsp;persona(stringa)<br>
+&nbsp;<br>
+return<br>
+nascita:&nbsp;la&nbsp;stringa&nbsp;generata</span></dd></dl>
+ <dl><dt><a name="-controllo_lettera_disp"><strong>controllo_lettera_disp</strong></a>(lettera)</dt><dd><span class="code">sceglie&nbsp;il&nbsp;numero&nbsp;corrispondente&nbsp;alla&nbsp;lettera&nbsp;controllata<br>
+&nbsp;<br>
+parametri:<br>
+lettera:&nbsp;la&nbsp;lettera&nbsp;da&nbsp;cui&nbsp;ricavare&nbsp;il&nbsp;valore<br>
+&nbsp;<br>
+return<br>
+num[lettera]&nbsp;il&nbsp;numero&nbsp;corrispondente&nbsp;alla&nbsp;lettera</span></dd></dl>
+ <dl><dt><a name="-controllo_lettera_pari"><strong>controllo_lettera_pari</strong></a>(lettera)</dt><dd><span class="code">sceglie&nbsp;il&nbsp;numero&nbsp;corrispondente&nbsp;alla&nbsp;lettera&nbsp;controllata<br>
+&nbsp;<br>
+parametri:<br>
+lettera:&nbsp;la&nbsp;lettera&nbsp;da&nbsp;controllare<br>
+&nbsp;<br>
+return<br>
+numeri[lettera]:&nbsp;il&nbsp;numero&nbsp;corrispondente&nbsp;alla&nbsp;lettera</span></dd></dl>
+ <dl><dt><a name="-creacodice"><strong>creacodice</strong></a>(nome, cognome, nascita, sesso, comune)</dt><dd><span class="code">mette&nbsp;assieme&nbsp;il&nbsp;codice&nbsp;fiscale<br>
+&nbsp;<br>
+parametri:<br>
+nome:&nbsp;il&nbsp;nome&nbsp;della&nbsp;persona(stringa)<br>
+cognome:&nbsp;il&nbsp;cognome&nbsp;della&nbsp;persona(stringa)<br>
+nascita:&nbsp;la&nbsp;data&nbsp;di&nbsp;nascita&nbsp;della&nbsp;persona(lista&nbsp;o&nbsp;tupla)<br>
+sesso:&nbsp;il&nbsp;sesso&nbsp;della&nbsp;persona(M&nbsp;o&nbsp;F)&nbsp;(stringa)<br>
+comune:&nbsp;il&nbsp;comune&nbsp;di&nbsp;nascita&nbsp;della&nbsp;persona(stringa)<br>
+&nbsp;<br>
+return<br>
+codice:&nbsp;il&nbsp;codice&nbsp;fiscale&nbsp;completato<br>
+-1:&nbsp;in&nbsp;caso&nbsp;ci&nbsp;siano&nbsp;problemi&nbsp;con&nbsp;il&nbsp;comune(non&nbsp;esistenza&nbsp;o&nbsp;sintassi&nbsp;sbagliata)</span></dd></dl>
+ <dl><dt><a name="-lettera_controllo"><strong>lettera_controllo</strong></a>(codice)</dt><dd><span class="code">calcola&nbsp;l'ultima&nbsp;lettera&nbsp;del&nbsp;codice&nbsp;fiscale&nbsp;in&nbsp;base&nbsp;al&nbsp;resto&nbsp;del&nbsp;codice<br>
+&nbsp;<br>
+parametri:<br>
+codice:&nbsp;le&nbsp;prime&nbsp;15&nbsp;cifre&nbsp;del&nbsp;codice&nbsp;fiscale<br>
+&nbsp;<br>
+return<br>
+lettere[c]&nbsp;la&nbsp;lettera&nbsp;di&nbsp;controllo&nbsp;([c]&nbsp;perchè&nbsp;veine&nbsp;preso&nbsp;l'elemento&nbsp;c&nbsp;della&nbsp;stringa</span></dd></dl>
+ <dl><dt><a name="-nome_cognome"><strong>nome_cognome</strong></a>(nome, cognome)</dt><dd><span class="code">genera&nbsp;le&nbsp;prime&nbsp;6&nbsp;lettere&nbsp;del&nbsp;codice&nbsp;fiscale&nbsp;e&nbsp;le&nbsp;aggiunge&nbsp;ad&nbsp;una&nbsp;stringa,<br>
+se&nbsp;le&nbsp;lettere&nbsp;non&nbsp;sono&nbsp;sufficienti&nbsp;aggiunge&nbsp;una&nbsp;"X"<br>
+&nbsp;<br>
+parametri:<br>
+nome:&nbsp;il&nbsp;nome&nbsp;della&nbsp;persona<br>
+cognome:&nbsp;il&nbsp;cognome&nbsp;della&nbsp;persona<br>
+&nbsp;<br>
+return<br>
+nc:&nbsp;la&nbsp;stringa&nbsp;contenente&nbsp;le&nbsp;prime&nbsp;6&nbsp;lettere&nbsp;del&nbsp;codice</span></dd></dl>
+</td></tr></table>
+</body></html>
