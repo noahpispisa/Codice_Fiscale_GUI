@@ -1,4 +1,4 @@
-nomefile = "Desktop\\CODICE_FISCALE_GUI\\CODICE_FISCALE_GUI\\Moduli\\lista-codici.txt"
+nomefile = "Moduli\\lista-codici.txt"
 def leggi_file(nomefile):  
     testo = []
     f = open(f"{nomefile}","r")
