@@ -44,7 +44,10 @@ def anno_nascita(data,sesso):
     data.mese -= 1
     lettere = "ABCDEHLMPRST"
     nascita += lettere[data.mese]
-    nascita += f"{data.giorno}"
+    if data.giorno >= 10:
+        nascita += f"{data.giorno}"
+    else:
+        nascita += f"0{data.giorno}"
     return nascita
 
 def nome_cognome(nome,cognome):

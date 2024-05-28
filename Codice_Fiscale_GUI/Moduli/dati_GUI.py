@@ -1,41 +1,35 @@
 import tkinter as tk
+from tkinter import messagebox
 
 def data():
     datas = []
     window = tk.Tk()
-    window.geometry("750x100")
+    window.geometry("500x120")
     window.title("raccolta dati")
+    window.resizable(height=0,width=0)
     grid = mygrid(window)
     grid[0].pack(anchor="nw")
     submit = mybutton(window,grid[1],datas)
-    submit.pack(side="bottom")
+    submit.pack(anchor="sw")
     window.mainloop()
     return datas
 
 def mygrid(window):
     data = []
     frame = tk.Frame(window)
-    frame.rowconfigure((0,1),weight=1)
-    frame.columnconfigure((0,1,2,3),weight=1)
-    date_t = mylabel(frame,"Inserire la data di nascita nel formato \"aaaa/mm/gg\"   ")
-    date_t.grid(row=0,column=0,sticky="nwe")
-    name_t = mylabel(frame,text="inserire il proprio nome e cognome   ")
-    name_t.grid(row=0,column=1,sticky="nwe")
-    sex_t = mylabel(frame,"inserire il proprio sesso   ")
-    sex_t.grid(row=0,column=2,sticky="nwe")
-    mun_t = mylabel(frame,"Inserire il comune di nascita   ")
-    mun_t.grid(row=0,column=3,sticky="nwe")
-    date = myentry(frame)
-    date.grid(row=1,column=0,sticky="nwe")
+    frame.rowconfigure((0,1,2,3),weight=1)
+    frame.columnconfigure(0,weight=1)
+    date = myentry(frame,"Inserire la propria data di nascita nel formato \"aaaa/mm/gg\": ")
+    date.grid(row=0,column=0,sticky="nwe")
     data.append(date)
-    name = myentry(frame)
-    name.grid(row=1,column=1,sticky="nwe")
+    name = myentry(frame,"Inserire il proprio nome e cognome: ")
+    name.grid(row=1,column=0,sticky="nwe")
     data.append(name)
     Sex = sex(frame)
-    Sex[0].grid(row=1,column=2,sticky="nwe")
+    Sex[0].grid(row=2,column=0,sticky="w")
     data.append(Sex[1])
-    mun = myentry(frame)
-    mun.grid(row=1,column=3,sticky="nwe")
+    mun = myentry(frame,"Inserire il proprio coune di nascita: ")
+    mun.grid(row=3,column=0,sticky="nwe")
     data.append(mun)
     return frame,data
 
@@ -46,16 +40,14 @@ def sex(frame):
     sex = tk.OptionMenu(frame,clicked,*opt)
     return sex,clicked
 
-def mylabel(frame,text):
-    label = tk.Label(frame,text=text)
-    return label
-
-def myentry(frame):
-    entry = tk.Entry(frame)
+def myentry(frame,testo = ""):
+    entry = tk.Entry(frame,width=len(testo)+20)
+    entry.insert("0",testo)
+    entry.bind("<ButtonPress-1>",func= lambda event: entry.delete("0",str(len(testo))))
     return entry
 
 def elaborate(window,lista,datas):
-    """la funzione controllo ceh i parametri siano immessi correttamente"""
+    """la funzione controllo che i parametri siano immessi correttamente"""
     date = lista[0].get()
     name = lista[1].get()
     mun = lista[3].get()
@@ -77,6 +69,8 @@ def elaborate(window,lista,datas):
                     datas.append(lista[2].get())
                     datas.append(mun.upper())
                     window.destroy()
+                    return
+    messagebox.showwarning("attenzione","Inserire tutti i dati nel modo richiesto")
     return 
 
 def mybutton(window,list,list1):
