@@ -10,6 +10,7 @@ def data():
     grid = mygrid(window)
     grid[0].pack(anchor="nw")
     submit = mybutton(window,grid[1],datas)
+    submit.bind("<KeyPress-Return>",func=lambda event: elaborate(window,grid[1],datas))
     submit.pack(anchor="sw")
     window.mainloop()
     return datas
@@ -41,10 +42,18 @@ def sex(frame):
     return sex,clicked
 
 def myentry(frame,testo = ""):
-    entry = tk.Entry(frame,width=len(testo)+20)
+    entry = tk.Entry(frame,width=len(testo))
     entry.insert("0",testo)
-    entry.bind("<ButtonPress-1>",func= lambda event: entry.delete("0",str(len(testo))))
+    entry.bind("<FocusIn>",func= lambda event: reimposta(event,testo,entry))
+    entry.bind("<FocusOut>",func= lambda event: reimposta(event,testo,entry))
     return entry
+
+def reimposta(event,testo,entry):
+    if entry.get() == "":
+        entry.insert("0",testo)
+    elif entry.get() == testo:
+        entry.delete("0",str(len(testo)))
+    return
 
 def elaborate(window,lista,datas):
     """la funzione controllo che i parametri siano immessi correttamente"""
